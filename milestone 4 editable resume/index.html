@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Resume Buildeer</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+    <h1><u>Editable Resume Builder By Kamran Rajput</u></h1>
+    <form id="resume-form">
+        
+<fieldset>
+    <input type="file" id="file" /> 
+
+    <legend>
+        Personal Information
+    </legend>
+    <label for="Type your name here">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+    <label for="contact No">contact:</label>
+    <input type="tel"id="contact NO"name="contact No" placeholder="Enter your number" required>
+
+
+</fieldset>
+<fieldset>
+    <legend>Qualification</legend>
+    <label for="academic ">Academic</label>
+    <textarea name="academic" id="academic" row="5"required>
+
+    </textarea><br>
+</fieldset>
+
+<fieldset>
+    <legend>Experience</legend>
+    <label for="experience ">Experience</label>
+    <textarea name="experience" id="experience" row="5"required>
+        
+    </textarea><br>
+
+</fieldset>
+<fieldset>
+    <legend>Skills</legend>
+    <label for="skills ">Skills</label>
+    <textarea name="skills" id="skills" row="5"required>
+        
+    </textarea><br>
+
+</fieldset>
+<button type="submit">Generate Now</button>
+    </form>
+    <br>
+    <div id="resume-display" contenteditable="true">
+        <!--Resume will be genereated here-->>
+    </div>
+    <script src="script.js"></script>
+
+
+
+
+
+</body>
+</html>
